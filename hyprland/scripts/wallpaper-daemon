@@ -2,12 +2,12 @@
 
 WALLPAPER_DIR="$HOME/.config/hypr/theme/walls"
 LAST_WALL="$HOME/.cache/last_wallpaper.txt"
-INTERVAL=900   # 900 sec = 15 min
+TRIGGER="$HOME/.cache/wallpaper_trigger"
+INTERVAL=900 # 60 = 1min
 
-# Run this after every change:
-# systemctl --user daemon-reload                                                                                                            17:39
-# systemctl --user restart wallpaper-daemon.service
-# systemctl --user status wallpaper-daemon.service
+LOCK="/tmp/hyprpaper_daemon.lock"
+exec 200>$LOCK
+flock -n 200 || exit 0
 
 choose() {
     find "$WALLPAPER_DIR" -type f | shuf -n 1
@@ -19,20 +19,41 @@ wait_for_hyprpaper() {
     done
 }
 
+switch_wall() {
+    local wp="$1"
+    hyprctl hyprpaper preload "$wp"
+    sleep 0.2
+    hyprctl hyprpaper wallpaper ",$wp"
+}
+
 wait_for_hyprpaper
 
 while true; do
-    new=$(choose)
+    if [ -f "$TRIGGER" ]; then
+        rm "$TRIGGER"
 
-    if [ -f "$LAST_WALL" ] && [ "$new" = "$(cat "$LAST_WALL")" ]; then
-        continue
+        if [ -f "$LAST_WALL" ]; then
+            new="$(cat "$LAST_WALL")"
+        else
+            new="$(choose)"
+        fi
+    else
+        new="$(choose)"
     fi
 
-    echo "$new" > "$LAST_WALL"
 
-    hyprctl hyprpaper preload "$new"
-    sleep 0.2
-    hyprctl hyprpaper wallpaper ",$new"
+    if [ -f "$LAST_WALL" ] && [ "$new" = "$(cat "$LAST_WALL")" ]; then
+        :
+    else
+        echo "$new" > "$LAST_WALL"
+        switch_wall "$new"
+    fi
 
-    sleep "$INTERVAL"
+    for ((i=0; i<INTERVAL; i++)); do
+        [ -f "$TRIGGER" ] && break
+        sleep 1
+    done
 done
+
+# Run this after every change:
+# systemctl --user daemon-reload && systemctl --user restart wallpaper-daemon.service && systemctl --user status wallpaper-daemon.service

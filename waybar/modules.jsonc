@@ -1,5 +1,5 @@
 {
-/* ARROWS */
+    /* ARROWS */
     "custom/arrow-right-no1": {
         "format": "  ",
         "tooltip": false
@@ -24,8 +24,7 @@
         "format": "  ",
         "tooltip": false
     },
-
-/* BRIGHTNESS */
+    /* BRIGHTNESS */
     "custom/brightness": {
         "exec": "/home/sch/.config/waybar/scripts/bright-status.sh",
         "interval": 1,
@@ -36,14 +35,25 @@
         "on-scroll-up": "/home/sch/.config/waybar/scripts/bright.sh up",
         "on-scroll-down": "/home/sch/.config/waybar/scripts/bright.sh down"
     },
-
-/* BATTERY */
+    /* BATTERY */
     "battery": {
         "format": "{capacity}% {icon}",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
         "tooltip": false,
         "interval": 5,
         "states": {
@@ -51,22 +61,32 @@
             "critical": 10
         }
     },
-
-/* BLUETHOOTH */
+    /* BLUETHOOTH */
     "bluetooth": {
         "format": "",
         "format-disabled": "",
         "format-connected": " {num_connections}",
         "format-connected-battery": "{icon} {num_connections}",
-        "format-icons": ["󰥇", "󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥈"],
+        "format-icons": [
+            "󰥇",
+            "󰤾",
+            "󰤿",
+            "󰥀",
+            "󰥁",
+            "󰥂",
+            "󰥃",
+            "󰥄",
+            "󰥅",
+            "󰥆",
+            "󰥈"
+        ],
         "tooltip-format": "{controller_alias}\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{icon} {device_battery_percentage}%",
         "on-click": "~/.config/hypr/scripts/toggle_scratchpad.sh blueman-manager blueman-manager"
     },
-
-/* CLOCKS */
+    /* CLOCKS */
     "clock#time": {
         "format": "{:%H.%M:%OS}",
         "interval": 1,
@@ -83,15 +103,14 @@
         "format": "{:%Y/%m/%d}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-        "mode": "month",
-        "mode-mon-col": 3,
-        "weeks-pos": "left",
-        "on-scroll": 1,
-        "on-click-right": "mode"
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "left",
+            "on-scroll": 1,
+            "on-click-right": "mode"
         }
     },
-
-/* CPU USAGE */
+    /* CPU USAGE */
     "cpu": {
         "on-click": "~/.config/hypr/scripts/toggle_scratchpad.sh scratchpad-btop 'kitty --class scratchpad-btop btop' scratchpad-large",
         "format": " {usage}%",
@@ -104,12 +123,15 @@
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", "󰈸"],
+        "format-icons": [
+            "",
+            "",
+            "󰈸"
+        ],
         "tooltip-format": "CPU",
         "interval": 2
     },
-
-/* GPU USAGE */
+    /* GPU USAGE */
     "custom/gpu-usage": {
         "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
         "on-click": "~/.config/hypr/scripts/toggle_scratchpad.sh scratchpad-nvtop 'kitty --class scratchpad-nvtop nvtop' scratchpad-large",
@@ -123,20 +145,22 @@
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", "󰈸"],
+        "format-icons": [
+            "",
+            "",
+            "󰈸"
+        ],
         "tooltip-format": "GPU",
         "interval": 2
     },
-
-/* RAM USAGE */
+    /* RAM USAGE */
     "memory": {
         "format": " {}%",
         "on-click": "~/.config/hypr/scripts/toggle_scratchpad.sh scratchpad-btop 'kitty --class scratchpad-btop btop' scratchpad-large",
         "tooltip-format": "RAM",
         "interval": 2
     },
-
-/* NETWORK */
+    /* NETWORK */
     "network": {
         "format-wifi": "",
         "format-ethernet": "",
@@ -148,8 +172,7 @@
         "tooltip": true,
         "interval": 2
     },
-
-/* AUDIO */
+    /* AUDIO */
     "pulseaudio": {
         "format": "  {volume}%",
         "format-muted": "  MUTE",
@@ -161,8 +184,7 @@
         "on-scroll-up": "wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
     },
-
-/* CAVA */
+    /* CAVA */
     /* "custom/cava": {
          "exec": "~/.config/waybar/scripts/cava.sh",
          "format": "{}",
@@ -171,16 +193,14 @@
          "on-click-right": "qpwgraph",
          "on-click-middle": "easyeffects"
      },*/
-
-/* LOGO */
+    /* LOGO */
     "custom/arch": {
         "format": "  ",
         "tooltip": false,
         "on-click": "~/.config/rofi/scripts/powermenu/powermenu",
         "on-click-right": "rofi -show drun"
     },
-
-/* MUSIC */
+    /* MUSIC */
     "custom/music": {
         "format": "{0}",
         "return-type": "json",
@@ -194,8 +214,7 @@
         /* "on-click-right": "~/.config/waybar/scripts/switch-media-player.sh",*/
         "on-click-right": "~/.config/waybar/scripts/switch-to-spotify.sh"
     },
-
-/* NOTIFICATIONS */
+    /* NOTIFICATIONS */
     "custom/notifications": {
         "tooltip": false,
         "format": "{icon}",
@@ -208,7 +227,7 @@
             "inhibited-none": "",
             "dnd-inhibited-notification": "<sup></sup>",
             "dnd-inhibited-none": ""
-            },
+        },
         "return-type": "json",
         "exec-if": "which swaync-client",
         "exec": "swaync-client -swb",
@@ -216,24 +235,21 @@
         "on-click-right": "swaync-client -d -sw",
         "escape": true
     },
-
-/* UPDATES */
+    /* UPDATES */
     "custom/updates": {
         "format": "{icon}",
         "return-type": "json",
         "tooltip": true,
         "format-icons": {
-        "pending-updates": "󰋠",
-        "updated": ""
-
+            "pending-updates": "󰋠",
+            "updated": ""
         },
         "exec-if": "which waybar-updates",
         "exec": "waybar-updates",
         "on-click": "~/.config/hypr/scripts/toggle_scratchpad.sh scratchpad-large 'kitty --class scratchpad-large fish -c upall'",
         "hide-empty-text": true
     },
-
-/* RECORDER */
+    /* RECORDER */
     "custom/wf-recorder": {
         "format": "{}",
         "interval": "once",
@@ -243,8 +259,7 @@
         "on-click": "exec $HOME/.config/hypr/scripts/rofi/recording",
         "signal": 8
     },
-
-/* LANG */
+    /* LANG */
     "hyprland/language": {
         "format": "{}",
         "format-cs": "CZ",
@@ -253,22 +268,20 @@
         "on-scroll-up": "hyprctl switchxkblayout all next",
         "on-scroll-down": "hyprctl switchxkblayout all next"
     },
-
-/* WINDOW */
+    /* WINDOW */
     "hyprland/window": {
         "format": "{}",
         "max-length": 80,
         "rewrite": {
-        "(.*) — Mozilla Firefox": "$1 󰈹",
-        "(.*) - Visual Studio Code": "$1 󰨞",
-        "(.*)Spotify": "Spotify 󰓇",
-        "(.*) - Wulfrion - Obsidian v1.10.3": "Obsidian ",
-        "(.*)Steam": "Steam 󰓓"
+            "(.*) — Mozilla Firefox": "$1 󰈹",
+            "(.*) - Visual Studio Code": "$1 󰨞",
+            "(.*)Spotify": "Spotify 󰓇",
+            "(.*) - Wulfrion - Obsidian v1.10.3": "Obsidian ",
+            "(.*)Steam": "Steam 󰓓"
         },
         "separate-outputs": false
     },
-
-/* WORKSPACES */
+    /* WORKSPACES */
     "hyprland/workspaces": {
         "disable-scroll": true,
         "active-only": false,
@@ -276,41 +289,40 @@
         "enable-bar-scroll": true,
         "format": "{icon}",
         "format-icons": {
-        "1": "1", /* 󰈹 firefox */
-        "2": "2", /* 󰎄 music*/
-        "3": "3", /* 󰀆 chat */
-        "4": "4",
-        "5": "5",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9", /* 󰒔 settings & info */
-        "10": "1", /* 󰈹 firefox */
-        "11": "2", /* 󱃖 code */
-        "12": "3", /* 󰑕 obsidian */
-        "13": "4", /* 󰇟 figma */
-        "14": "5", /* 󰩳 gaming */
-        "15": "6",
-        "16": "7",
-        "17": "8",
-        "18": "9",
-        "19": "10",
-        "20": "20",
-        "21": "21",
-        "22": "22",
-        "23": "23",
-        "24": "24",
-        "25": "25",
-        "26": "26",
-        "27": "27"
+            "1": "1", /* 󰈹 firefox */
+            "2": "2", /* 󰎄 music*/
+            "3": "3", /* 󰀆 chat */
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9", /* 󰒔 settings & info */
+            "10": "1", /* 󰈹 firefox */
+            "11": "2", /* 󱃖 code */
+            "12": "3", /* 󰑕 obsidian */
+            "13": "4", /* 󰇟 figma */
+            "14": "5", /* 󰩳 gaming */
+            "15": "6",
+            "16": "7",
+            "17": "8",
+            "18": "9",
+            "19": "10",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23",
+            "24": "24",
+            "25": "25",
+            "26": "26",
+            "27": "27"
         },
         "on-scroll-up": "hyprctl dispatch workspace r-1",
         "on-scroll-down": "hyprctl dispatch workspace r+1",
         "on-click": "activate",
         "sort-by-number": true
     },
-
-/* TRAY */
+    /* TRAY */
     "tray": {
         "spacing": 10
     }

@@ -47,8 +47,8 @@ micro ~/.config/systemd/user/wallpaper-daemon.service
 
 ```toml
 [Unit]
-Description=Simple wallpaper rotation daemon for hyprpaper
-After=hyprpaper.service
+Description=Wallpaper rotation daemon for hyprpaper
+After=hyprpaper.service graphical-session.target sleep.target suspend.target
 Requires=hyprpaper.service
 PartOf=hypr-session.target
 
@@ -56,7 +56,9 @@ PartOf=hypr-session.target
 Type=simple
 ExecStart=%h/.config/hypr/scripts/wallpaper-daemon
 Restart=always
-RestartSec=5s
+RestartSec=1
+TimeoutStopSec=2
+KillMode=control-group
 
 [Install]
 WantedBy=hypr-session.target
