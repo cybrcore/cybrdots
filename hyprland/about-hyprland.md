@@ -27,7 +27,7 @@ hypr/
 ```
 ### 4. Create a backup of your old config and theme
 
-## Random wallpaper (WIP)
+## Random wallpaper
 > This script cycles wallpapers in a pseudo-random pattern (never shows the same wallpaper twice in a row, hence pseudo-random).
 
 ### 1. Copy [wallpaper-daemon](../hyprland/scripts/wallpaper-daemon) script inside your `hypr/scripts` folder
@@ -48,20 +48,18 @@ micro ~/.config/systemd/user/wallpaper-daemon.service
 ```toml
 [Unit]
 Description=Wallpaper rotation daemon for hyprpaper
-After=hyprpaper.service graphical-session.target sleep.target suspend.target
+After=hyprpaper.service suspend.target
 Requires=hyprpaper.service
-PartOf=hypr-session.target
 
 [Service]
 Type=simple
 ExecStart=%h/.config/hypr/scripts/wallpaper-daemon
 Restart=always
 RestartSec=1
-TimeoutStopSec=2
 KillMode=control-group
 
 [Install]
-WantedBy=hypr-session.target
+WantedBy=default.target
 ```
 
 ### 5. Run
@@ -69,31 +67,6 @@ WantedBy=hypr-session.target
 ```sh
 systemctl --user daemon-reload
 systemctl --user enable --now wallpaper-daemon.service
-```
-
-After any future changes to the script:
-
-```sh
-systemctl --user daemon-reload
-```
-
-## Autostart daemon
-
-### 1. Create a daemon service
-
-```sh
-micro ~/.config/systemd/user/autostart-daemon.service
-```
-
-### 2. Copy [autostart-daemon](../hyprland/scripts/autostart-daemon) inside
-
-### 3. Now you need to configure your [autostart](../hyprland/scripts/autostart) script
-
-### 4. Run
-
-```sh
-systemctl --user daemon-reload
-systemctl --user enable --now autostart-daemon.service
 ```
 
 After any future changes to the script:
