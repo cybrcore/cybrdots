@@ -1,0 +1,24 @@
+@theme "~/.config/rofi/style.rasi"
+
+listview {
+    enabled:						true;
+	columns:						20;
+    lines:							15;
+    flow:							horizontal;
+}
+
+entry {
+	enabled:						true;
+}
+
+element-text {
+	vertical-align:					0.5;
+	horizontal-align:				0.5;
+}
+
+
+// --- Disabled
+
+element-icon {
+	enabled:						false;
+}

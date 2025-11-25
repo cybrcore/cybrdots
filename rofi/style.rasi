@@ -1,0 +1,174 @@
+@theme "~/.config/rofi/theme/cybrlauncher.rasi"
+
+configuration {
+	modi:							"drun";
+	show-icons:						true;
+	display-drun:					"Apps";
+	display-run:					"Run";
+	display-filebrowser:			"Files";
+	display-window:					"Windows";
+	drun-display-format:			"{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+	me-select-entry:				"";
+	me-accept-entry:				[ MousePrimary, MouseSecondary, MouseDPrimary ];
+}
+
+// Main Window
+window {
+	enabled:						true;
+	location:						center;
+	anchor:							center;
+	fullscreen:						false;
+	border:							1px;
+	border-radius:					@radius;
+	border-color:					@re0;
+	x-offset:						0;
+	y-offset:						0;
+	margin:							0;
+	padding:						0;
+	cursor:							"default";
+	transparency:					"real";
+	background-color:				@background;
+}
+
+// Main Box
+mainbox {
+	enabled:						true;
+	spacing:						@gap;
+	padding:						@gap;
+	background-color:				transparent;
+	margin:							0;
+	spacing:						0;
+	children:						[ "inputbar", "mode-switcher", "listview" ];
+}
+
+// Inputbar
+inputbar {
+	enabled:						true;
+	spacing:						@gap;
+	margin:							0px;
+	background-color:				transparent;
+	children:						[ "textbox-prompt-colon", "entry" ];
+}
+
+entry {
+	enabled:						true;
+	padding:						@gap;
+	border:							1px solid;
+	border-color:					@re0;
+	border-radius:					@radius;
+	background-color:				@no0;
+	text-color:						@re0;
+	cursor:							text;
+	placeholder:					" ";
+	placeholder-color:				none;
+	vertical-align:					0.0;
+	horizontal-align:				0.5;
+	margin:							0 0 8px 0;
+}
+
+// Listview
+listview {
+	enabled:						true;
+	columns:						2;
+	lines:							10;
+	cycle:							true;
+	dynamic:						true;
+	scrollbar:						false;
+	layout:							vertical;
+	reverse:						false;
+	fixed-height:					true;
+	fixed-columns:					true;
+	spacing:						@gap;
+	background-color:				transparent;
+	cursor:							"default";
+}
+
+// Elements
+element {
+	enabled:						true;
+	spacing:						@gap;
+	padding:						@gap;
+	border:							none;
+	border-radius:					@radius;
+	background-color:				transparent;
+	text-color:						@re0;
+	cursor:							pointer;
+}
+
+element normal.active {
+	background-image:				@active;
+	text-color:						@re0;
+}
+
+element selected.normal {
+	background-color:				@re0;
+	text-color:						@no0;
+}
+
+element-icon {
+	background-color:				transparent;
+	size:							32px;
+	cursor:							inherit;
+}
+
+element-text {
+	enabled:						true;
+	background-color:				inherit;
+	text-color:						inherit;
+	cursor:							inherit;
+}
+
+mode-switcher {
+	enabled:						false;
+}
+
+textbox-prompt-colon {
+	enabled:						false;
+	expand:							false;
+	padding:						@gap;
+	border-color:					none;
+	background-color:				transparent;
+	text-color:						@re0;
+	str:							" ";
+}
+
+
+// --- Mess
+
+button {
+	padding:						@gap;
+	border-radius:					@radius;
+	background-image:				@button;
+	text-color:						@no0;
+	cursor:							pointer;
+}
+
+button selected {
+	background-image:				#00ff00;
+	text-color:						@re0;
+}
+
+error-message {
+	padding:						@gap;
+	background-color:				@re0;
+	text-color:						@no0;
+}
+
+textbox {
+	padding:						0;
+	border:							none;
+	border-radius:					@radius;
+	text-color:						@re0;
+	background-color:				transparent;
+	vertical-align:					0.5;
+	horizontal-align:				0.0;
+}
+
+scrollbar {
+	background-color:				transparent;
+	handle-color:					@re0;
+}
+
+message {
+	background-color:				transparent;
+}

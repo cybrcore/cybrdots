@@ -1,0 +1,33 @@
+@theme "~/.config/rofi/style.rasi"
+
+window {
+	enabled:						true;
+	width:							50%;
+}
+
+listview {
+	enabled:						true;
+	columns:						3;
+	lines:							13;
+	flow:							horizontal;
+}
+
+entry {
+	enabled:						true;
+}
+
+element-text {
+	enabled:						true;
+	orientation:					vertical;
+}
+
+
+// --- Disabled
+
+mode-switcher {
+	enabled:						false;
+}
+
+element-icon {
+	enabled:						false;
+}

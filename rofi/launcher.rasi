@@ -1,0 +1,56 @@
+@theme "~/.config/rofi/style.rasi"
+
+window {
+	width:							800px;
+}
+
+mainbox {
+	enabled:						true;
+	children:						[ "inputbar", "listview" ];
+}
+
+inputbar {
+	enabled:						true;
+	children:						[ "entry" ];
+}
+
+entry {
+	enabled:						true;
+}
+
+listview {
+	enabled:						true;
+	columns:						3;
+	lines:							3;
+	dynamic:						false;
+}
+
+element {
+	enabled:						true;
+	spacing:						16px;
+	orientation:					vertical;
+}
+
+element-icon {
+	enabled:						true;
+	vertical-align:					0.5;
+	horizontal-align:				0.5;
+	expand:							false;
+}
+
+element-text {
+	enabled:						true;
+	background-color:				transparent;
+	text-color:						@re0;
+	vertical-align:					0.5;
+	horizontal-align:				0.5;
+	font:							"GeistMono Nerd Font 12";
+}
+
+element-text selected {
+	text-color:						@no0;
+}
+
+mode-switcher {
+	enabled:						false;
+}

@@ -53,8 +53,40 @@ Collection of themes for Waybar, Hyprland, kitty, micro, Starship, cava, btop an
             <img src="assets/firefox.png" height="60" />
         </a>
     </td>
+	<td>
+        <a href="./rofi/about-rofi.md">
+            <img src="assets/rofi.png" height="60" />
+        </a>
+    </td>
 </tr>
 </table>
+
+### Showcase
+<p align="left">
+  <img src="./assets/inspiration/insp-kitty.png">
+  <br>
+  <em>Waybar, Hyprland, Kitty, Starship</em>
+</p>
+<p align="left">
+  <img src="./assets/inspiration/insp-firefox.png">
+  <br>
+  <em>Firefox</em>
+</p>
+<p align="left">
+  <img src="./assets/inspiration/insp-btop.png">
+  <br>
+  <em>btop</em>
+</p>
+<p align="left">
+  <img src="./assets/inspiration/insp-rofi.png">
+  <br>
+  <em>rofi (launcher, clipboard, emoji, powermenu, screenshot menu, wallpaper menu)</em>
+</p>
+<p align="left">
+  <img src="./assets/inspiration/insp-lock.png">
+  <br>
+  <em>Hyprlock</em>
+</p>
 
 > [!WARNING]
 > ### Check out my other project
@@ -97,12 +129,12 @@ Collection of themes for Waybar, Hyprland, kitty, micro, Starship, cava, btop an
 - [x] cava
 - [x] btop
 - [x] nvtop (takes its colors from kitty)
+- [x] rofi
 ### Alpha
 - [ ] Hyprland
 - [ ] Firefox
 - [ ] Starship
 ### WIP (not included)
-- [ ] rofi
 - [ ] swaync
 - [ ] yazi
 - [ ] Spicetify

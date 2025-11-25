@@ -1,0 +1,48 @@
+@theme "~/.config/rofi/style.rasi"
+
+configuration {
+	show-icons:						false;
+	me-select-entry:				"";
+	me-accept-entry:				[ MousePrimary, MouseSecondary, MouseDPrimary ];
+}
+
+window {
+	width:							33%;
+}
+
+mainbox {
+	enabled:						true;
+	spacing:						40px;
+	margin:							100px;
+	padding:						0;
+	children:						[ "message", "listview" ];
+}
+
+listview {
+	enabled:						true;
+	columns:						5;
+	lines:							1;
+	fixed-height:					false;
+	fixed-columns:					false;
+}
+
+element {
+	enabled:						true;
+	padding:						0;
+}
+
+element-text {
+	enabled:						true;
+	font:							"Symbols Nerd Font 32";
+	vertical-align:					0.0;
+	horizontal-align:				0.5;
+	padding:						20px;
+}
+
+message {
+	enabled:						true;
+}
+
+textbox {
+	font:							"GeistMono Nerd Font 12";
+}

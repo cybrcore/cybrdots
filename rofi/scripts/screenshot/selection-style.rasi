@@ -1,0 +1,44 @@
+@theme "~/.config/rofi/style.rasi"
+
+window {
+	width:							80%;
+}
+
+listview {
+	enabled:						true;
+	columns:						4;
+	lines:							3;
+	fixed-height:					false;
+	flow:							horizontal;
+	scrollbar:						true;
+}
+
+element {
+	enabled:						true;
+	orientation:					vertical;
+	padding:						0;
+	margin:							0;
+	spacing:						0;
+	size:							100%;
+}
+
+element selected {
+	border:							1px;
+	border-color:					@re0;
+}
+
+element-icon {
+	size:							30%;
+	padding:						0;
+}
+
+
+// ----- Disabled
+
+inputbar {
+	enabled:						false;
+}
+
+element-text {
+	enabled:						false;
+}

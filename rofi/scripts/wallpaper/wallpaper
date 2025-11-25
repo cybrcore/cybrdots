@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+WALLPAPERS_DIR="$HOME/.config/hypr/theme/walls"
+LAST_WALL="$HOME/.cache/last_wallpaper.txt"
+TRIGGER="$HOME/.cache/wallpaper_trigger"
+STYLE="$HOME/.config/rofi/scripts/wallpaper/style.rasi"
+
+choice=$(
+  ls --escape "$WALLPAPERS_DIR" |
+    while read A; do
+      echo -en "$A\x00icon\x1f$WALLPAPERS_DIR/$A\n"
+    done |
+    rofi -dmenu -i -show-icons -p "Wallpaper" \
+      -theme "$STYLE"
+)
+
+[ -z "$choice" ] && exit 0
+
+wp="$WALLPAPERS_DIR/$choice"
+
+if [[ -f "$LAST_WALL" && "$(cat "$LAST_WALL")" == "$wp" ]]; then
+    touch "$TRIGGER"
+    exit 0
+fi
+
+echo "$wp" > "$LAST_WALL"
+
+hyprctl hyprpaper preload "$wp"
+sleep 0.2
+hyprctl hyprpaper wallpaper ",$wp"
+
+touch "$TRIGGER"
+exit 0

@@ -1,0 +1,12 @@
+#! /bin/sh
+
+rofimoji \
+  --action clipboard \
+  --max-recent 10 \
+  --skin-tone neutral \
+  --hidden-descriptions \
+  --selector-args "-theme ~/.config/rofi/scripts/emoji/style.rasi" \
+  --file emojis_smileys_emotion emoticons emojis_animals_nature emojis_food_drink emojis_activities emojis_travel_places emojis_objects emojis_symbols emojis_flags emojis_people_body geometric_shapes currency_symbols general_punctuation latin-1_supplement latin_extended-a math mathematical_operators greek_and_coptic block_elements box_drawing symbols_and_pictographs_extended-a supplemental_symbols_and_pictographs
+
+exit 0
+

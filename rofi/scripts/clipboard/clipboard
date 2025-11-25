@@ -1,0 +1,20 @@
+#!/bin/bash
+
+theme="$HOME/.config/rofi/scripts/clipboard/style.rasi"
+
+if ! command -v cliphist >/dev/null 2>&1; then
+    notify-send "Clipboard Error" "cliphist is not installed."
+    exit 1
+fi
+
+selection="$(
+    cliphist list | while read -r id rest; do
+        rest="${rest# }"  # strip leading space
+
+        printf "%s\x00display\x1f%s\n" "$id" "$rest"
+    done | rofi -dmenu -theme "$theme" -p "Clipboard"
+)"
+
+[ -z "$selection" ] && exit 0
+
+cliphist decode "$selection" | wl-copy

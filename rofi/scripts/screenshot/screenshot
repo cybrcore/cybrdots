@@ -1,0 +1,25 @@
+#!/bin/bash
+
+theme="$HOME/.config/rofi/scripts/screenshot/style.rasi"
+hyprshot="$HOME/.config/hypr/scripts/hyprshot"
+save_dir="$HOME/Obrázky"
+filename="shot-$(date +%Y-%m-%d-%H%M%S).png"
+
+cmd="$hyprshot -o $save_dir -f $filename"
+
+output=""
+window=""
+folder=""
+
+selected="$(echo -e "$output\n$window\n$folder" | rofi -dmenu -theme "${theme}")"
+case $selected in
+$output)
+  $cmd -m output
+  ;;
+$window)
+  $cmd -m window
+  ;;
+$folder)
+  ~/.config/rofi/scripts/screenshot/screenshot_selection
+  ;;
+esac

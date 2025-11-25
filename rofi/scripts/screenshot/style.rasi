@@ -1,0 +1,43 @@
+@theme "~/.config/rofi/style.rasi"
+
+configuration {
+	show-icons:						false;
+	me-select-entry:				"";
+	me-accept-entry:				[ MousePrimary, MouseSecondary, MouseDPrimary ];
+}
+
+window {
+	width:							20%;
+}
+
+mainbox {
+	enabled:						true;
+}
+
+listview {
+	enabled:						true;
+	columns:						3;
+	lines:							1;
+	fixed-height:					false;
+	fixed-columns:					false;
+  
+}
+
+element {
+	enabled:						true;
+	padding:						0;
+}
+
+element-text {
+	font:							"Symbols Nerd Font 32";
+	vertical-align:					0;
+	horizontal-align:				0.5;
+	padding:						@gap;
+}
+
+
+// --- Disabled
+
+inputbar {
+	enabled:						false;
+}

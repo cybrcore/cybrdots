@@ -1,0 +1,25 @@
+#!/bin/bash
+
+screenshots_dir="$HOME/Obrázky"
+theme="$HOME/.config/rofi/scripts/screenshot/selection-style.rasi"
+
+filelist=$(ls -t "$screenshots_dir" 2>/dev/null)
+
+[ -z "$filelist" ] && exit 0
+
+choice=$(
+  while read -r A; do
+    printf "%s\x00icon\x1f%s/%s\n" "$A" "$screenshots_dir" "$A"
+  done <<< "$filelist" \
+  | rofi -dmenu -i -show-icons -theme "$theme"
+)
+
+[ -z "$choice" ] && exit 0
+
+screenshot="$screenshots_dir/$choice"
+
+if command -v wl-copy >/dev/null 2>&1; then
+  wl-copy --type image/png < "$screenshot"
+else
+  echo "wl-copy not found" >&2
+fi
