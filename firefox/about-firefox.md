@@ -1,7 +1,7 @@
 ![Firefox banner](../assets/firefox.png)
 
 # Cybrfox (WIP)
-Theme for Firefox browser inspired by the color palette popularized by **Cyberpunk 2077**.
+Theme for Firefox browser inspired by cyberpunk aesthetics.
 
 > [!CAUTION]
 > This theme is still work in progress and was not made with other users in mind.

@@ -20,6 +20,7 @@ Please avoid sharing publicly until the 1.0.0 release.
 ### Related projects
 - **[Cybrpapers](https://github.com/scherrer-txt/cybrpapers)** -- hand-crafted cyberpunk wallpapers  
 - **[Cybrcolors](https://github.com/scherrer-txt/cybrcolors)** -- unified color palette used across all themes
+- **Cybrcursors** -- custom mouse cursors ([sneak peek](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))
 
 # Showcase
 <p align="left">
@@ -69,23 +70,23 @@ Please avoid sharing publicly until the 1.0.0 release.
 
 | Component   | State | Notes | Last Update |
 |------------|--------|-------------------------------|---|
-| Starship   | 🟢 Done | Fully themed | 2025-12-07 |
-| swaync     | 🟢 Done | Fully themed | 2025-12-07 |
+| [Starship](./starship/about-starship.md)   | 🟢 Done | Fully themed | 2025-12-07 |
+| [swaync](./swaync/about-swaync.md)     | 🟢 Done | Fully themed | 2025-12-07 |
 | broot      | 🟢 Done | Fully themed | 2025-12-07 |
 | fzf        | 🟢 Done | Fully themed | 2025-12-07 |
-| Kitty      | 🟢 Done | Fully themed | 2025-12-07 |
+| [Kitty](./kitty/about-kitty.md)      | 🟢 Done | Fully themed | 2025-12-07 |
 | Fish       | 🟢 Done | Fully themed | 2025-12-07 |
 | yazi       | 🟢 Done | Fully themed | 2025-12-07 |
-| Rofi       | 🟢 Done | Fully themed | 2025-12-07 |
-| Micro      | 🟢 Done | Fully themed | 2025-12-02 |
-| Waybar     | 🟢 Done | Fully themed | 2025-11-23 |
-| Cava       | 🟢 Done | Fully themed | 2025-11-14 |
-| btop       | 🟢 Done | Fully themed | 2025-11-14 |
+| [Rofi](./rofi/about-rofi.md)       | 🟢 Done | Fully themed | 2025-12-07 |
+| [Micro](./micro/about-micro.md)      | 🟢 Done | Fully themed | 2025-12-02 |
+| [Waybar](./waybar/about-waybar.md)     | 🟢 Done | Fully themed | 2025-11-23 |
+| [Cava](./cava/about-cava.md)       | 🟢 Done | Fully themed | 2025-11-14 |
+| [btop](./btop/about-btop.md)       | 🟢 Done | Fully themed | 2025-11-14 |
 | nvtop      | 🟢 Done | Fully themed | 2025-11-14 |
-| Hyprland   | 🟡 Beta | Fully themed; polishing | 2025-12-07 |
+| [Hyprland](./hyprland/about-hyprland.md)   | 🟡 Beta | Fully themed; polishing | 2025-12-07 |
 | Cybrcursors | 🔴 Alpha | Fully themed; polishing | 2025-12-07 |
 | VSCode     | 🔴 Alpha | Basic theme; early stage | 2025-11-20 |
-| Firefox    | 🔴 Alpha | Basic theme; refactoring | 2025-11-14 |
+| [Firefox](./firefox/about-firefox.md)    | 🔴 Alpha | Basic theme; refactoring | 2025-11-14 |
 | Obsidian   | 🔴 Alpha | Plugin-based theme; true standalone theme planned | 2025-08-14 |
 | Neovim     | ⚫ None | Planned theme | n/a |
 | Spicetify  | ⚫ None | Planned theme | n/a |
@@ -118,37 +119,6 @@ Please avoid sharing publicly until the 1.0.0 release.
 - [ ] GTK theme?  
 
 ---
-
-# Themes
-<div align="left">
-  <a href="./waybar/about-waybar.md">
-    <img src="assets/waybar.png" height="60" alt="Waybar" />
-  </a>
-  <a href="./kitty/about-kitty.md">
-    <img src="assets/kitty.png" height="60" alt="Kitty" />
-  </a>
-  <a href="./micro/about-micro.md">
-    <img src="assets/micro.png" height="60" alt="Micro" />
-  </a>
-  <a href="./cava/about-cava.md">
-    <img src="assets/cava.png" height="60" alt="Cava" />
-  </a>
-  <a href="./btop/about-btop.md">
-    <img src="assets/btop.png" height="60" alt="btop" />
-  </a>
-  <a href="./rofi/about-rofi.md">
-    <img src="assets/rofi.png" height="60" alt="rofi" />
-  </a>
-  <a href="./hyprland/about-hyprland.md">
-    <img src="assets/hyprland.png" height="60" alt="Hyprland" />
-  </a>
-  <a href="./starship/about-starship.md">
-    <img src="assets/starship.png" height="60" alt="Starship" />
-  </a>
-  <a href="./firefox/about-firefox.md">
-    <img src="assets/firefox.png" height="60" alt="Firefox" />
-  </a>
-</div>
 
 # Installation & Pre-flight Guide
 Before applying these dotfiles, follow this short pre-flight checklist to avoid configuration conflicts and ensure a smooth setup.

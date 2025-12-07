@@ -1,7 +1,7 @@
 ![btop banner](../assets/btop.png)
 
 # Cybrtop
-Color theme for btop inspired by the color palette popularized by **Cyberpunk 2077**.
+Color theme for btop inspired by cyberpunk aesthetics.
 
 > [!NOTE]
 > This is beta version. Expect minor errors. 

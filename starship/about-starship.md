@@ -1,7 +1,7 @@
 ![starship banner](../assets/starship.png)
 
 # Cybrship
-Color prompt for Starship inspired by the color palette popularized by **Cyberpunk 2077**.
+Color prompt for Starship inspired by cyberpunk aesthetics.
 
 > [!CAUTION]
 > This theme is still work in progress, there are some bugs to be fixed. 

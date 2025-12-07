@@ -1,7 +1,7 @@
 ![Swaync banner](../assets/swaync.png)
 
 # Cybrsway (WIP)
-Theme for Sway notification center inspired by the color palette popularized by **Cyberpunk 2077**.
+Theme for Sway notification center inspired by cyberpunk aesthetics.
 
 ## Result
 <p align="left">

@@ -1,7 +1,7 @@
 ![cava banner](../assets/cava.png)
 
 # Cybrcava
-Color theme for cava inspired by the color palette popularized by **Cyberpunk 2077**.
+Color theme for cava inspired by cyberpunk aesthetics.
 
 > [!NOTE]
 > This is beta version. Expect minor errors. 

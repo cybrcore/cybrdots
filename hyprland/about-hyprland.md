@@ -1,7 +1,7 @@
 ![Hyprland banner](../assets/hyprland.png)
 
 # Cybrland (WIP)
-Theme for Hyprland window manager inspired by the color palette popularized by **Cyberpunk 2077**.
+Theme for Hyprland window manager inspired by cyberpunk aesthetics.
 
 > [!NOTE]
 > This is beta version. Expect minor errors. 

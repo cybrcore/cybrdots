@@ -1,7 +1,7 @@
 ![Waybar banner](../assets/waybar.png)
 
 # Cybrbar
-Theme for Waybar inspired by the color palette popularized by **Cyberpunk 2077**.
+Theme for Waybar inspired by cyberpunk aesthetics.
 
 ## Result
 <img src="../assets/inspiration/insp-colors.png" width="800"/></td>

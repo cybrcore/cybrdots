@@ -1,7 +1,7 @@
 ![Kitty banner](../assets/kitty.png)
 
 # Cybrkitty
-Color palette for Kitty inspired by the color palette popularized by **Cyberpunk 2077**.
+Color palette for Kitty inspired by cyberpunk aesthetics.
 
 > [!NOTE]
 > This is beta version. Expect minor errors. 

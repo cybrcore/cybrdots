@@ -1,7 +1,7 @@
 ![rofi banner](../assets/rofi.png)
 
 # Rofi
-Theme for Rofi inspired by the color palette popularized by **Cyberpunk 2077**.
+Theme for Rofi inspired by cyberpunk aesthetics.
 
 > [!NOTE]
 > This is beta version. Expect minor errors. 

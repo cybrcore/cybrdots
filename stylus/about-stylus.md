@@ -1,7 +1,7 @@
 ![stylus banner](../assets/stylus.png)
 
 # Stylus themes
-Custom themes for singular webpages for the Stylus extension inspired by the color palette popularized by **Cyberpunk 2077**.
+Custom themes for singular webpages for the Stylus extension inspired by cyberpunk aesthetics.
 
 > [!CAUTION]
 > This only works if you have **enabled transparency** in Firefox browser and use **Hyprland**
