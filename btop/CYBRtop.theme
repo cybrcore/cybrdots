@@ -1,0 +1,61 @@
+# ---------------------------------------
+# CYBRtop     btop theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     MIT
+# Source:     ~/.config/btop/themes/CYBRtop.theme
+# ---------------------------------------
+
+theme[main_bg]="#030408"
+theme[main_fg]="#898D99"
+theme[title]="#898D99"
+
+theme[hi_fg]="#29BECC"
+theme[selected_bg]="#F24848"
+theme[selected_fg]="#030408"
+theme[proc_misc]="#F24848"
+
+theme[inactive_fg]="#631F21"
+theme[meter_bg]="#212638"
+theme[div_line]="#631F21"
+
+theme[graph_text]="#F24848"
+theme[mem_box]="#F24848"
+theme[net_box]="#F24848"
+theme[proc_box]="#F24848"
+theme[cpu_box]="#F24848"
+
+theme[temp_start]="#30F291"
+theme[temp_mid]="#F2D230"
+theme[temp_end]="#F26118"
+
+theme[cpu_start]="#F24848"
+theme[cpu_mid]="#631F21"
+theme[cpu_end]="#631F21"
+
+theme[free_start]="#30F291"
+theme[free_mid]="#30F291"
+theme[free_end]="#15633F"
+
+theme[cached_start]="#29BECC"
+theme[cached_mid]="#29BECC"
+theme[cached_end]="#124E56"
+
+theme[available_start]="#30F291"
+theme[available_mid]="#30F291"
+theme[available_end]="#15633F"
+
+theme[used_start]="#30F291"
+theme[used_mid]="#F2D230"
+theme[used_end]="#F24848"
+
+theme[download_start]="#3061F2"
+theme[download_mid]="#3061F2"
+theme[download_end]="#152966"
+
+theme[upload_start]="#A130F2"
+theme[upload_mid]="#A130F2"
+theme[upload_end]="#230D37"
+
+theme[process_start]="#F24848"
+theme[process_mid]="#F2D230"
+theme[process_end]="#F26118"

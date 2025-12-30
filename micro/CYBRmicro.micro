@@ -1,29 +1,9 @@
-# CYBRCOLORS
-#
-# Red ===
-# re0:	F24848
-# re2:	331215
-#
-# Green ===
-# gr0:	30F291
-# gr2:	0C3423
-#
-# Yellow ===
-# ye0:	F2D230
-# ye2:	332D10
-#
-# Blue ===
-# bl0:	3061F2
-#
-# Violet ===
-# vi0:	A130F2
-#
-# Cyan ===
-# cy0:	29BECC
-# cy2:	0B292F
-#
-# Grey ===
-# me0:	4D5A80
+# ---------------------------------------
+# CYBRmicro   micro theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     MIT
+# Source:     ~/.config/micro/colorschemes/CYBRMmicro.micro
+# ---------------------------------------
 
 color-link cursor-line "0"
 
@@ -62,12 +42,12 @@ color-link symbol.brackets "#898D99"
 color-link symbol.operator "#898D99"
 color-link symbol.tag "#898D99"
 
-color-link type "italic #F26118"
+color-link type "#3061F2"
 color-link type.keyword "#A130F2"
 
-color-link special "#898D99"
-color-link statement "#F26118"
-color-link preproc "#898D99"
+color-link special "#29BECC"
+color-link statement "#F2D230"
+color-link preproc "#3061F2"
 
 color-link color-column "#44475A"
 color-link type.extended "default"

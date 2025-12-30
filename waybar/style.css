@@ -1,3 +1,12 @@
+/* 
+# ---------------------------------------
+# CYBRbar     waybar theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     MIT
+# Source:     ~/.config/waybar/style.css
+# ---------------------------------------
+*/
+
 /* === VARIABLES === */
 
 @define-color no0 #030408;
@@ -20,9 +29,9 @@
 @define-color bl1 #152966;
 @define-color bl2 #0C1737;
 
-@define-color pu0 #A130F2;
-@define-color pu1 #421666;
-@define-color pu2 #230D37;
+@define-color vi0 #A130F2;
+@define-color vi1 #421666;
+@define-color vi2 #230D37;
 
 @define-color cy0 #29BECC;
 @define-color cy1 #124E56;
@@ -36,9 +45,13 @@
 @define-color me1 #212638;
 @define-color me2 #0D1120;
 
-@define-color or0 #F23D18;
-@define-color or1 #631B0E;
-@define-color or2 #330F0B;
+@define-color or0 #F26118;
+@define-color or1 #63290E;
+@define-color or2 #33170B;
+
+@define-color pi0 #F230B2;
+@define-color pi1 #63164C;
+@define-color pi2 #330D2A;
 
 
 /* === GLOBAL === */

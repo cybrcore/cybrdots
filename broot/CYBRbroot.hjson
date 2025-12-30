@@ -1,0 +1,141 @@
+# ---------------------------------------
+# CYBRbroot   broot theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     MIT
+# Source:     ~/.config/broot/skins/CYBRbroot.hjson
+# ---------------------------------------
+
+skin: {
+    # Basic DONE
+	directory: ansi(1)
+    file: ansi(6)
+    pruning: ansi(15) none italic
+    selected_line: ansi(13) ansi(9)
+    tree: ansi(1)
+
+    # Search DONE
+    char_match: ansi(3) none bold
+    parent: ansi(1) none bold
+
+    # File properties DONE
+    exe: ansi(6)
+    link: ansi(2)
+    sparse: ansi(4)
+
+    # Prompt DONE
+    input: ansi(6)
+
+    # Status bar DONE
+    status_bold: rgb(03,
+	04,
+	08) ansi(1) bold
+    status_code: ansi(1) ansi(9)
+    status_ellipsis: rgb(03,
+	04,
+	08) ansi(1)
+    status_error: rgb(03,
+	04,
+	08) ansi(1)
+    status_italic: rgb(03,
+	04,
+	08) ansi(1) italic
+    status_job: rgb(03,
+	04,
+	08) ansi(1)
+    status_normal: rgb(03,
+	04,
+	08) ansi(1)
+
+    # Flag status DONE
+    flag_label: ansi(4)
+    flag_value: ansi(4) bold
+
+    # Background DONE
+    default: none none
+
+    # Scrollbar DONE
+    scrollbar_track: ansi(9)
+    scrollbar_thumb: ansi(1)
+
+    # Git DONE
+    git_branch: ansi(13)
+    git_deletions: ansi(9)
+    git_insertions: ansi(2)
+    git_status_conflicted: ansi(1)
+    git_status_current: ansi(6)
+    git_status_ignored: ansi(8)
+    git_status_modified: ansi(3)
+    git_status_new: ansi(2) none bold
+    git_status_other: ansi(5)
+
+    # Staging area DONE
+    staging_area_title: ansi(3)
+
+    # Documentation DONE
+    help_bold: ansi(1) none bold
+    help_code: ansi(2)
+    help_headers: ansi(6)
+    help_italic: ansi(1) none italic
+    help_paragraph: ansi(1)
+    help_table_border: ansi(1)
+
+    # Device column DONE
+    device_id_major: ansi(5)
+    device_id_minor: ansi(5)
+    device_id_sep: ansi(5)
+
+    # Counts column DONE
+    count: ansi(6)
+
+    # Dates column DONE
+    dates: ansi(1)
+
+    # Permissions column DONE
+    group: ansi(6)
+    owner: ansi(6)
+    perm__: ansi(1)
+    perm_r: ansi(6)
+    perm_w: ansi(3)
+    perm_x: ansi(2)
+
+    # Hex preview DONE
+    hex_null: ansi(9)
+    hex_ascii_graphic: ansi(1)
+    hex_ascii_whitespace: ansi(7)
+    hex_ascii_other: ansi(6)
+    hex_non_ascii: ansi(3)
+
+    # Preview DONE
+    preview: ansi(1) none
+    preview_line_number: ansi(9) none
+    preview_match: ansi(3) none bold
+    preview_title: ansi(1) none
+
+    # Used for displaying errors DONE
+    file_error: ansi(0)
+
+    # Content searches DONE
+    content_extract: ansi(5) ansi(13)
+    content_match: ansi(3) none underlined
+
+    # Used in status line DONE
+    purpose_bold: ansi(3) ansi(11) bold
+    purpose_ellipsis: ansi(3)
+    purpose_italic: ansi(3) ansi(11) italic
+    purpose_normal: ansi(13)
+
+    # Modal indicator DONE
+    mode_command_mark: ansi(4) ansi(12)
+
+    # File system occupation DONE
+    good_to_bad_0: ansi(4)
+    good_to_bad_1: ansi(4)
+    good_to_bad_2: ansi(2)
+    good_to_bad_3: ansi(2)
+    good_to_bad_4: ansi(1)
+    good_to_bad_5: ansi(1)
+    good_to_bad_6: ansi(6)
+    good_to_bad_7: ansi(6)
+    good_to_bad_8: ansi(7)
+    good_to_bad_9: ansi(7)
+}
