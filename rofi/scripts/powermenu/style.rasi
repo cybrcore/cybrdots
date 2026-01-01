@@ -1,3 +1,12 @@
+/* 
+# ---------------------------------------
+# CYBRrofi    rofi powermenu script theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     GPL-3.0
+# Source:     ~/.config/rofi/scripts/powermenu/style.rasi
+# ---------------------------------------
+*/
+
 @theme "~/.config/rofi/style.rasi"
 
 configuration {
@@ -13,7 +22,7 @@ window {
 mainbox {
 	enabled:						true;
 	spacing:						40px;
-	margin:							100px;
+	margin:							40px;
 	padding:						0;
 	children:						[ "message", "listview" ];
 }

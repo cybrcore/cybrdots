@@ -9,7 +9,7 @@
 ```
 
 ## Result
-<img src="../assets/inspiration/insp-fish.png" width="800"/></td>
+<img src="../assets/inspiration/insp-fish.png"/></td>
 
 ## Steps
 ### 0. Before you start

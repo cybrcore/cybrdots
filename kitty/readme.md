@@ -9,7 +9,10 @@
 ```
 
 ## Result
-<img src="../assets/inspiration/insp-micro.png" width="800"/></td>
+<img src="../assets/inspiration/insp-micro.png"/></td>
+<p align="center">
+  <em>kitty ↗ (top-left to bottom-right: rust, python, css; bash, c++, html)</em>
+</p>
 
 ## Steps
 ### 0. Before you start

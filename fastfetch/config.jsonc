@@ -1,0 +1,100 @@
+// ---------------------------------------
+// CYBRfetch   fastfetch theme (part of cybrland)
+// Project:    https://github.com/scherrer-txt/cybrland
+// Author:     scherrer-txt   |   License:     GPL-3.0
+// Source:     ~/.config/fastfetch/config.jsonc
+// ---------------------------------------
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"color": {
+			"1": "red",
+			"2": "red"
+		}
+	},
+	"display": {
+		"separator": " ",
+		"color": "red"
+	},
+	"modules": [
+		{
+			"type": "custom",
+			"key": "{#7} HARDWARE INFORMATION {#}{#31}\uE0B0",
+			"keyColor": "red"
+		},
+		{
+			"type": "board",
+			"key": "├─ MTB ",
+			"keyColor": "red"
+		},
+		{
+			"type": "cpu",
+			"key": "├─ CPU ",
+			"keyColor": "red"
+		},
+		{
+			"type": "gpu",
+			"format": "{2}",
+			"key": "├─ GPU ",
+			"keyColor": "red"
+		},
+		{
+			"type": "memory",
+			"key": "├─ RAM ",
+			"keyColor": "red"
+		},
+		{
+			"type": "display",
+			"key": "└─ RES ",
+			"keyColor": "red",
+			"compactType": "original"
+		},
+		"break",
+		{
+			"type": "custom",
+			"key": "{#7} SOFTWARE INFORMATION {#}{#36}\uE0B0",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "os",
+			"key": "├─ OS  ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "kernel",
+			"key": "├─ KER ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "wm",
+			"key": "├─ WM  ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "shell",
+			"key": "├─ SH  ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "terminal",
+			"key": "├─ TER ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "packages",
+			"key": "├─ PKG ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "uptime",
+			"key": "└─ UPT ",
+			"keyColor": "cyan"
+		},
+		"break",
+		{
+			"type": "colors",
+			"symbol": "squares",
+			"paddingLeft": 8
+		}
+	]
+}

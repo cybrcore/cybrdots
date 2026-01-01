@@ -9,7 +9,7 @@
 ```
 
 ## Result
-<img src="../assets/inspiration/insp-firefox.png" width="800"/></td>
+<img src="../assets/inspiration/insp-firefox.png"/></td>
 
 > [!CAUTION]
 > This theme is still work in progress. Major refactor is in progress. Use at your own risk.

@@ -9,7 +9,10 @@
 ```
 
 # Result
-<img src="../assets/inspiration/insp-waybar.png" width="800"/></td>
+<img src="../assets/inspiration/insp-waybar.png"/></td>
+<p align="center">
+  <em>waybar ↗ (top to bottom: secondary monitor, main monitor)</em>
+</p>
 
 # Steps
 ### 0. Before you start
@@ -21,18 +24,10 @@
 ### 1. Download waybar configs
 ```sh
 #download waybar directory
-git clone --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git
-cd cybrland
-git sparse-checkout init --cone
-git sparse-checkout set waybar
-git checkout main
-
-# move waybar directory to config directory
-mv -i ~/cybrland/waybar ~/.config/
-
-# delete cybrland directory
-cd ~ && rm -rf cybrland
+git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set waybar && git checkout main && mv waybar ~/.config/ && cd ~ && rm -rf cybrland
 ```
+↑ Unsure what this does? [Explanation](../INSTALL.md#How-sparse-checkout-works)  
+
 ### 2. Verify installation
 ```sh
 ls -R ~/.config/waybar

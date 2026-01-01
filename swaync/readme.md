@@ -9,11 +9,9 @@
 ```
 
 ## Result
-<p align="left">
-  <img src="../assets/inspiration/insp-swaync.png">
-</p>
+<img src="../assets/inspiration/insp-swaync.png">
 <p align="center">
-  <em>Floating notifications; Control center; Control center list ↗</em>
+  <em>swaync ↗ (left to right: floating notifications; control center; control center list )</em>
 </p>
 
 ## Steps

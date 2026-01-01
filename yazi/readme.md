@@ -9,7 +9,10 @@
 ```
 
 # Result
-<img src="../assets/inspiration/insp-yazi.png" width="800"/></td>
+<img src="../assets/inspiration/insp-yazi.png"/></td>
+<p align="center">
+  <em>yazi ↗ (top-left: image folder; bottom-left: music folder; right: directory and file preview)</em>
+</p>
 
 # Steps
 ### 0. Before you start

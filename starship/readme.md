@@ -9,7 +9,10 @@
 ```
 
 ## Result
-<img src="../assets/inspiration/insp-starship.png" width="800"/></td>
+<img src="../assets/inspiration/insp-starship.png"/></td>
+<p align="center">
+  <em>starship ↗ (left to right: terminal, terminal, directory, git)</em>
+</p>
 
 ## Steps
 ### 0. Before you start

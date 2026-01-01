@@ -9,7 +9,14 @@
 ```
 
 # Result
-<img src="../assets/inspiration/insp-hypr.png" width="800"/></td>
+<img src="../assets/inspiration/insp-hypr.png"/></td>
+<p align="center">
+  <em>hypr ↗ (right: firefox; left top to bottom: firefox, emoji, powermenu, screenshot menu, wallpaper menu)</em>
+</p>
+<img src="../assets/inspiration/insp-hypr2.png"/></td>
+<p align="center">
+  <em>hypr ↗ (foreground: firefox w/Cyberspace.online; background: cava)</em>
+</p>
 
 # Steps
 ### 0. Before you start
@@ -25,19 +32,9 @@
 
 ### 2. Download and install hyprland configs
 ```sh
-# Download hyprland directory
-git clone --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git
-cd cybrland
-git sparse-checkout init --cone
-git sparse-checkout set hypr
-git checkout main
-
-# Move hyprland directory to config directory
-mv -i ~/cybrland/hypr ~/.config
-
-# Delete cybrland directory
-cd ~ && rm -rf cybrland
+git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set hypr && git checkout main && mv hypr ~/.config/ && cd ~ && rm -rf cybrland
 ```
+↑ Unsure what this does? [Explanation](../INSTALL.md#How-sparse-checkout-works)  
 
 ### 3. Verify installation
 ```sh

@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# ---------------------------------------
+# CYBRbar     waybar brigthness script (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     GPL-3.0
+# Source:     ~/.config/waybar/scripts/bright.sh
+# ---------------------------------------
+
 LOG=/tmp/bright.log
 STATE_FILE=/tmp/bright_state
 

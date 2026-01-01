@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# ---------------------------------------
+# CYBRbar     waybar brigthness value script (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     GPL-3.0
+# Source:     ~/.config/waybar/scripts/bright-status.sh
+# ---------------------------------------
 
 bus=4
 val=$(/usr/bin/ddcutil --bus="$bus" getvcp 10 2>/dev/null \

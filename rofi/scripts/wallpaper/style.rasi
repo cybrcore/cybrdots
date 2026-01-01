@@ -1,3 +1,12 @@
+/* 
+# ---------------------------------------
+# CYBRrofi    rofi wallpaper selection script theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     GPL-3.0
+# Source:     ~/.config/rofi/scripts/wallpaper/style.rasi
+# ---------------------------------------
+*/
+
 @theme "~/.config/rofi/style.rasi"
 
 window {

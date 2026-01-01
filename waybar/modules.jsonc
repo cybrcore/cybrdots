@@ -1,3 +1,11 @@
+/* 
+# ---------------------------------------
+# CYBRbar     waybar modules (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     GPL-3.0
+# Source:     ~/.config/waybar/modules.jsonc
+# ---------------------------------------
+*/
 {
 	/* ARROWS */
 	"custom/arrow-right-no1": {

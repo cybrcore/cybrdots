@@ -1,13 +1,29 @@
 ![Cybrland banner](./assets/banner.jpg)
 
 # Cybrland
-**A dotfile setup for Arch Hyprland, inspired by cyberpunk aesthetics.**
-**A complete design system with clear [design philosophy](PHILOSOPHY.md).**
+**Cyberpunk dotfiles for Arch Hyprland, built on a deliberate [design philosophy](PHILOSOPHY.md)**
 
-**Version:** v0.9.5  |  **Status:** Stable release (Dec 2025)  
+**Version:** v1.0.0  |  **Status:** Stable (2026-01-01)  
 
-## What's inside
+## Content
+- [What's Inside](#whats-inside)
+  - [Main](#main)
+  - [Extras](#extras)
+- [Showcase](#showcase)
+- [Included Themes](#included-themes)
+  - [Core System](#-core-system)
+  - [Utilities](#-utilities)
+  - [Testing](#-testing)
+- [How To Install](#how-to-install)
+- [Related Projects](#related-projects)
+- [Roadmap](#roadmap)
+  - [v1.0.0](#v100-2025-12-31)
+  - [v1.5.0](#v150-early-mid-2026)
+  - [v2.0.0](#v200-mid-late-2026)
+- [Credits & Inspiration](#credits--inspiration)
+- [License](#license)
 
+## What's Inside
 ### Main
 - **Unified aesthetic** - Custom cyberpunk palette + Geist Mono Nerd Font across 15+ applications
 - **Terminal-centric** - Fast, integrated TUI/CLI workflow with seamless component interaction
@@ -19,51 +35,39 @@
 - **Desktop brightness control** - Mousewheel adjustment via DDC/CI (OSD-free)
 
 ## Showcase
-<p align="left">
-  <img src="./assets/inspiration/insp-starship.png">
-</p>
+<img src="./assets/inspiration/insp-main1.png">
 <p align="center">
-  <em>Waybar, Hyprland, Kitty, Starship ↗</em>
+  <em>Left-to-right: Neovim, rofi-launcher, cava, fastfetch, custom script ↗</em>
 </p>
 <br>
-<p align="left">
-  <img src="./assets/inspiration/insp-rofi.png">
-</p>
+<img src="./assets/inspiration/insp-main2.png">
 <p align="center">
-  <em>rofi ↗ (launcher, clipboard, emoji, powermenu, screenshot menu, wallpaper menu)</em>
+  <em>Left-to-right: stacked micro, yazi, broot ↗</em>
 </p>
 <br>
-<p align="left">
-  <img src="./assets/inspiration/insp-lock.png">
-</p>
+<img src="./assets/inspiration/insp-main3.png">
 <p align="center">
-  <em>Hyprlock ↗</em>
-</p>
-
-<details>
-<summary> SHOW MORE </summary>
-<p align="left">
-  <img src="./assets/inspiration/insp-firefox.png">
-</p>
-<p align="center">
-  <em>Firefox ↗</em>
+  <em>Firefox w/Cybrspace.online custom theme ↗</em>
 </p>
 <br>
-<p align="left">
-  <img src="./assets/inspiration/insp-btop.png">
-</p>
+<img src="./assets/inspiration/insp-main4.png">
 <p align="center">
-  <em>btop ↗</em>
+  <em>Left-to-right: clock, btop, ls ↗</em>
 </p>
 <br>
-<p align="left">
-  <img src="./assets/inspiration/insp-swaync.png">
+<img src="./assets/inspiration/insp-main5.png">
+<p align="center">
+  <em>Fore-to-back: wallpaper selector, neovim, matrix ↗</em>
 </p>
+<br>
+<img src="./assets/inspiration/insp-firefox.png">
+<p align="center">
+  <em>Firefox w/Sidebery ↗</em>
+</p>
+<img src="./assets/inspiration/insp-swaync.png">
 <p align="center">
   <em>swaync ↗ (floating notifications; control center; control center list)</em>
 </p>
-<br>
-</details>
 
 ## Included Themes
 
@@ -86,15 +90,20 @@ Complete themes with full documentation:
 - **[micro](./micro/readme.md)** - TUI Lightweight text editor
 - **[cava](./cava/readme.md)** - CLI Audio visualizer
 - **[bat](./bat/readme.md)** - CLI Syntax-highlighted file viewer 
+- **[fastfetch](./fastfetch/readme.md)** - CLI System information tool  
 
 ### 🟡 Testing
-- **[neovim](./neovim/readme.md)** - Beta - *Fully themed; polishing*
+- **[neovim](./nvim/readme.md)** - Beta - *Fully themed; polishing*
 - **[firefox](./firefox/readme.md)** - Alpha - *Themed; major refactor planned*
 - **Cybrcursors** - Alpha - *Fully themed; polishing*
 - **VSCode** - Alpha - *Early stage*
 - **Obsidian** - Alpha - *Plugin-based, standalone theme planned*
 
-## Related projects
+## How To Install
+1. Follow the [Installation Guide](INSTALL.md) for in-depth guidance, installation order, backups creation and troubleshooting (**safest & recommended; beginner-friendly**)
+2. Read individual readme.md files in this repo for modular installation
+
+## Related Projects
 - [Cybrpapers](https://github.com/scherrer-txt/cybrpapers) - Hand-crafted wallpaper collection
 - [Cybrcolors](https://github.com/scherrer-txt/cybrcolors) - Unified color palette
 - Cybrcursors - Custom mouse cursors ([preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))
@@ -148,3 +157,5 @@ This project builds on the work of many talented creators:
 - [Cyberspace.online](https://cyberspace.online) - Absolutely great community where I found my digital home after many years of wandering and lurking. Their support was of immensely important to keep me going.
 
 If I missed anyone, feel free to open an issue!
+
+## License
