@@ -97,7 +97,6 @@ window#waybar.hidden {
 #bluetooth,
 #custom-gpu-usage,
 #custom-wf-recorder,
-#custom-cava,
 #custom-updates,
 #custom-notifications,
 #pulseaudio,
@@ -117,21 +116,21 @@ window#waybar.hidden {
 /* === POWERLINE ARROWS === */
 
 #custom-arrow-left-no1 {
-	background-image: url('/home/sch/.config/waybar/svg/no1-left.svg');
+	background-image: url('svg/no1-left.svg');
 	background-position: left;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #custom-arrow-right-no1 {
-	background-image: url('/home/sch/.config/waybar/svg/no1-right.svg');
+	background-image: url('svg/no1-right.svg');
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #custom-arrow-left-re0 {
-	background-image: url('/home/sch/.config/waybar/svg/re0-left.svg');
+	background-image: url('svg/re0-left.svg');
 	background-position: left;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -139,7 +138,7 @@ window#waybar.hidden {
 }
 
 #custom-arrow-right-re0 {
-	background-image: url('/home/sch/.config/waybar/svg/re0-right.svg');
+	background-image: url('svg/re0-right.svg');
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -147,7 +146,7 @@ window#waybar.hidden {
 }
 
 #custom-arrow-left-gr0 {
-	background-image: url('/home/sch/.config/waybar/svg/gr0-left.svg');
+	background-image: url('svg/gr0-left.svg');
 	background-position: left;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -155,7 +154,7 @@ window#waybar.hidden {
 }
 
 #custom-arrow-right-gr0 {
-	background-image: url('/home/sch/.config/waybar/svg/gr0-right.svg');
+	background-image: url('svg/gr0-right.svg');
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -357,11 +356,6 @@ window#waybar.hidden {
 
 /* === MISC === */
 
-#custom-cava {
-	color: @re0;
-	background-color: @no1;
-}
-
 #custom-wf-recorder {
 	color: @re0;
 	background-color: @no1;
@@ -410,7 +404,6 @@ window#waybar.hidden {
 	background-color: @no1;
 }
 
-#custom-cava:hover,
 #custom-wf-recorder:hover,
 #bluetooth:hover,
 #language:hover {

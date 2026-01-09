@@ -192,15 +192,6 @@
 		"on-scroll-up": "wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+",
 		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
 	},
-	/* CAVA */
-	/* "custom/cava": {
-         "exec": "~/.config/waybar/scripts/cava.sh",
-         "format": "{}",
-         "format-icons": [▁,▂,▃,▄,▅,▆,▇,█],
-         "on-click": "kitty --class center-float-mini cava",
-         "on-click-right": "qpwgraph",
-         "on-click-middle": "easyeffects"
-     },*/
 	/* LOGO */
 	"custom/arch": {
 		"format": "  ",

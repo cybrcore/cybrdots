@@ -26,6 +26,11 @@
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/hyprwm/Hyprland) | [Arch Wiki](https://wiki.archlinux.org/title/Hyprland)
 
+> [!IMPORTANT]
+> Hyprland should be updated to latest (*v0.53.1 or higher*) for the config to properly work.  
+> **If you already have Hyprland installed**: check your version with `hyprland -v` and either update or proceed with installation.
+
+
 ### 1. Backup existing config (if any)
 ```sh
 [ -d ~/.config/hypr ] && mv ~/.config/hypr ~/.config/hypr.backup

@@ -39,6 +39,10 @@ ls -R ~/.config/waybar
 
 You should see: `config.jsonc`, `modules.jsonc`, `style.css`, `scripts/`, `svg/`
 
+> [!IMPORTANT]
+> Keep the file structure intact - configs use relative paths to `modules.jsonc` and `svg/` files.  
+> If waybar doesn't load, or doesn't have angled corners, verify the path matches your setup.  
+
 <details>
 <summary>Expected file structure</summary>
 
@@ -46,20 +50,56 @@ You should see: `config.jsonc`, `modules.jsonc`, `style.css`, `scripts/`, `svg/`
 ~/.config/waybar/
 ├── config.jsonc            # main settings
 ├── modules.jsonc           # module definitions
-├── style.css               # visual styling
+├── style.css               # visual styling (references svg/ files)
 ├── scripts/
 │   ├── bright.sh           # brightness control (via mousescroll)
 │   ├── bright-status.sh    # brightness values display
-│   ├── cava.sh             # audio visualizer
 │   └── mediaplayer.py      # media player info
-└── svg/                    # graphical elements
+└── svg/                    # graphical elements (used in style.css)
     ├── gr0-left.svg
     ├── gr0-right.svg
     └── ...
 ```
 </details>
 
-### 3. Restart waybar
+### 3. Adjust settings
+There are two bars in the config, only one shows up after installation.  
+Intended use is for multi-monitor setups, but single-monitor users can switch waybar layouts.
+
+#### For multi-monitor setups:
+```sh
+# Check your monitor name(s)
+hyprctl monitors
+
+# Output should look like:
+# Monitor [YOUR-FIRST-MONITOR-NAME] (ID 0):
+# ...
+# Monitor [YOUR-SECOND-MONITOR-NAME] (ID 1):
+
+# Edit waybar config
+$EDITOR ~/.config/waybar/config.jsonc
+```
+In the config file, uncomment BAR 2 and edit `"output"` in both bars according to your `hyprctl monitors` output:
+```jsonc
+/* BAR 1 */
+{
+    "output": "YOUR-FIRST-MONITOR-NAME",
+    ...
+}
+/* BAR 2 */
+,{
+    "output": "YOUR-SECOND-MONITOR-NAME",
+    ...
+}
+```
+#### For switching waybar layouts:
+Open config file:
+```sh
+$EDITOR ~/.config/waybar/config.jsonc
+```
+Uncomment BAR 2, comment out BAR 1.
+
+### 4. Restart waybar
 ```sh
 killall waybar && waybar
 ```
