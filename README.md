@@ -15,7 +15,7 @@
 
 [![Install Guide](./assets/install.png)](INSTALL.md) &nbsp; [![Roadmap](./assets/roadmap.png)](ROADMAP.md)
 
-[![Design Philosophy](./assets/philosophy.png)](PHILOSOPHY.md) &nbsp; [![AI Disclosure](./assets/ai-usage.png)](AI-DISCLOSURE.md) &nbsp; [![Contributing](./assets/contributing.png)](AI-DISCLOSURE.md)
+[![Design Philosophy](./assets/philosophy.png)](PHILOSOPHY.md) &nbsp; [![AI Disclosure](./assets/ai-usage.png)](AI-DISCLOSURE.md) &nbsp; [![Contributing](./assets/contributing.png)](CONTRIBUTING.md)
 
 ## Content
 - [What's Inside](#whats-inside)
