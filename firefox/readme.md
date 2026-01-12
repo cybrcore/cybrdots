@@ -26,7 +26,13 @@
   - `userChrome.css` contains all **decoration** setting
   - `sideberry.css` contains all **decorations** for Sidebery, paste its content into its Style Editor
 
-### 3. Restart Firefox
+### 3. Edit about:config
+- Open Firefox, CTRL+T, paste `about:config`, confirm
+- Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` (*enables userChrome.css to be loaded*)
+- Set `browser.tabs.allow_transparent_browser` to `true` (*this enables transparency for tabs*)
+- Set `widget.transparent-windows` to `true` (*this enables transparency for Sidebery*)
+
+### 4. Restart Firefox
 ```sh
 pkill firefox && firefox
 ```
