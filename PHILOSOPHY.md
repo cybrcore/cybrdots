@@ -1,7 +1,7 @@
 # Design Philosophy
 
-This configuration follows a cyberpunk-inspired aesthetic focused on functional clarity and visual consistency. The design language borrows from information-dense game UIs (Cyberpunk 2077, Deus Ex) but adapted for practical desktop use.
-Core goals: Merge aesthetics with function. Less is more. GUI should look like TUI.
+This configuration follows a cyberpunk-inspired aesthetic focused on functional clarity and visual consistency. The design language borrows from information-dense game UIs (Cyberpunk 2077, Deus Ex) but adapted for practical desktop use.  
+Core goals: Merge aesthetics with function. Less is more. GUI should look like TUI.  
 
 ## Design Principles
 ### Typography

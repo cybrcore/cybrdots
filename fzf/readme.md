@@ -8,17 +8,16 @@
 ░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░        
 ```
 
-## Result
 <img src="../assets/inspiration/insp-fzf.png"/></td>
 
-## Steps
-### 0. Before you start
+# Steps
+## 0. Before you start
 - Make sure kitty is installed: `sudo pacman -S kitty` and theme is applied
 - Make sure fzf is installed: `sudo pacman -S fzf`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/junegunn/fzf) | [Arch Wiki](https://wiki.archlinux.org/title/Fzf)
 
-### 1. Apply the theme
+## 1. Apply the theme
 ```sh
 set -Ux FZF_DEFAULT_OPTS "\
   --color=fg:#F24848,fg+:#F24848,bg:-1,bg+:#331215 \

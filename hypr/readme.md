@@ -8,7 +8,6 @@
 ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
 ```
 
-# Result
 <img src="../assets/inspiration/insp-hypr.png"/></td>
 <p align="center">
   <em>hypr ↗ (right: firefox; left top to bottom: firefox, emoji, powermenu, screenshot menu, wallpaper menu)</em>
@@ -18,8 +17,13 @@
   <em>hypr ↗ (foreground: firefox w/Cyberspace.online; background: cava)</em>
 </p>
 
+> ![WARNING]
+> For Wallpaper switcher ([rofi](../rofi/readme.md)) to work as intended, you need latest hyprpaper.  
+> `CTRL + SUPER + W` launches the Wallpaper switcher, `ENTER` confirms the selection.
+> If the selected wallpaper gets stuck, you can reset the timer by repeatedly selecting the wallpaper again.
+
 # Steps
-### 0. Before you start
+## 0. Before you start
 - Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure hyprland is installed: `sudo pacman -S hyprland`
 - Make sure `git` is installed: `sudo pacman -S git`
@@ -31,18 +35,18 @@
 > **If you already have Hyprland installed**: check your version with `hyprland -v` and either update or proceed with installation.
 
 
-### 1. Backup existing config (if any)
+## 1. Backup existing config (if any)
 ```sh
 [ -d ~/.config/hypr ] && mv ~/.config/hypr ~/.config/hypr.backup
 ```
 
-### 2. Download and install hyprland configs
+## 2. Download and install hyprland configs
 ```sh
 git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set hypr && git checkout main && mv hypr ~/.config/ && cd ~ && rm -rf cybrland
 ```
 ↑ Unsure what this does? [Explanation](../INSTALL.md#How-sparse-checkout-works)  
 
-### 3. Verify installation
+## 3. Verify installation
 ```sh
 ls -R ~/.config/hypr
 ```
@@ -78,14 +82,14 @@ chmod +x ~/.config/hypr/scripts/*
 ```
 </details>
 
-### 4. Configure for your system
+## 4. Configure for your system
 You'll need to change some settings in hyprland config to match your machine.
 
 ```sh
 $EDITOR ~/.config/hypr/hyprland.conf
 ```
 
-#### 4a. Monitor setup
+### a) Monitor setup
 Check your monitor configuration:
 ```sh
 hyprctl monitors
@@ -133,7 +137,7 @@ workspace = 10, monitor:$first, default:true
 ...
 ```
 
-#### 4b. Keyboard layout (optional)
+### b) Keyboard layout (optional)
 ```sh
 $EDITOR ~/.config/hypr/hyprland.conf
 ```
@@ -147,7 +151,7 @@ input {
 }
 ```
 
-#### 4c. Keybinds (recommended)
+### c) Keybinds (recommended)
 Review and customize keybinds in `# === BINDS ===` section. The config includes organized sections for:
 - Applications, Notifications, Bar
 - Pickers/Launchers, Screenshots
@@ -155,7 +159,7 @@ Review and customize keybinds in `# === BINDS ===` section. The config includes 
 - Workspaces, Monitors
 - Media controls
 
-#### 4d. Autostart apps
+### d) Autostart apps
 ```sh
 $EDITOR ~/.config/hypr/scripts/apps
 ```
@@ -163,7 +167,7 @@ Here you can define which apps should start on boot. I use sleep to give the OS 
 Comment out apps you don't want to launch on startup, add those you want.
 
 
-#### 4e. Essential services
+### e) Essential services
 ```sh
 $EDITOR ~/.config/hypr/scripts/services
 ```

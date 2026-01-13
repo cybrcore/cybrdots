@@ -8,7 +8,6 @@
  ░▒▓█████████████▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
 ```
 
-# Result
 <img src="../assets/inspiration/insp-waybar.png"/></td>
 <p align="center">
   <em>waybar ↗ (top to bottom: secondary monitor, main monitor)</em>
@@ -18,21 +17,21 @@
 > I included my own special tool for Waybar - if you hover over the red dot next between CPU temp and Notification center and scroll, you can adjust the brightness of your monitors (works on desktop via DDC/CI, OSD-free)
 
 # Steps
-### 0. Before you start
+## 0. Before you start
 - Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure waybar is installed: `sudo pacman -S waybar`
 - Make sure `git` is installed: `sudo pacman -S git`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/Alexays/Waybar) | [Arch Wiki](https://wiki.archlinux.org/title/Waybar)
 
-### 1. Download waybar configs
+## 1. Download waybar configs
 ```sh
 #download waybar directory
 git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set waybar && git checkout main && mv waybar ~/.config/ && cd ~ && rm -rf cybrland
 ```
 ↑ Unsure what this does? [Explanation](../INSTALL.md#How-sparse-checkout-works)  
 
-### 2. Verify installation
+## 2. Verify installation
 ```sh
 ls -R ~/.config/waybar
 ```
@@ -67,11 +66,11 @@ chmod +x ~/.config/waybar/scripts/*
 ```
 </details>
 
-### 3. Adjust settings
+## 3. Adjust settings
 There are two bars in the config, only one shows up after installation.  
 Intended use is for multi-monitor setups, but single-monitor users can switch waybar layouts.
 
-#### For multi-monitor setups:
+### For multi-monitor setups:
 Check your monitor configuration:
 ```sh
 hyprctl monitors
@@ -108,14 +107,14 @@ In the config file, uncomment BAR 2 and edit `"output"` in both bars according t
     ...
 }
 ```
-#### For switching waybar layouts:
+### For switching waybar layouts:
 Open config file:
 ```sh
 $EDITOR ~/.config/waybar/config.jsonc
 ```
 Uncomment BAR 2, comment out BAR 1.
 
-### 4. Restart waybar
+## 4. Restart waybar
 ```sh
 killall waybar && waybar
 ```

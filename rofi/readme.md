@@ -8,28 +8,31 @@
 ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
 ```
 
-## Result
 <img src="../assets/inspiration/insp-rofi.png"/></td>
 <p align="center">
   <em>rofi ↗ (top-left to bottom-right: launcher, clipboard, emoji; powermenu, screenshot menu, wallpaper menu)</em>
 </p>
 
-## Steps
-### 0. Before you start
+> ![WARNING]
+> For Wallpaper switcher to work as intended, you need latest hyprpaper.  
+> `CTRL + SUPER + W` launches the Wallpaper switcher, `ENTER` confirms the selection.
+> If the selected wallpaper gets stuck, you can reset the timer by repeatedly selecting the wallpaper again.
+
+# Steps
+## 0. Before you start
 - Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure hyprland is installed: `sudo pacman -S hyprland` and theme is applied  
-- Make sure swaync is installed: `sudo pacman -S kitty`
-- Make sure `git` is installed: `sudo pacman -S git`
+- Make sure swaync is installed: `sudo pacman -S swaync`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/davatorium/rofi) | [Arch Wiki](https://wiki.archlinux.org/title/Rofi)
 
-### 1. Download rofi configs
+## 1. Download rofi configs
 ```sh
 git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set rofi && git checkout main && mv rofi ~/.config/ && cd ~ && rm -rf cybrland
 ```
 ↑ Unsure what this does? [Explanation](../INSTALL.md#How-sparse-checkout-works)  
 
-### 2. Verify installation
+## 2. Verify installation
 ```sh
 ls -R ~/.config/rofi
 ```
@@ -82,7 +85,7 @@ chmod +x \
 ```
 </details>
 
-### 3. Test notifications
+## 3. Test notifications
 ```sh
 notify-send "Notification" "Basic notification body text, medium length"
 notify-send -u low "Low priority" "Priority: Low"

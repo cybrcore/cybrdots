@@ -9,7 +9,6 @@
 ░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░▒▓███████▓▒░
 ```
 
-## Result
 <img src="../assets/inspiration/insp-rss.png"/></td>
 <p align="center">
   <em>newsboat ↗ (feed)</em>
@@ -19,22 +18,22 @@
   <em>newsboat ↗ (article)</em>
 </p>
 
-## Steps
-### 0. Before you start
+# Steps
+## 0. Before you start
 - Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure newsboat is installed: `sudo pacman -S newsboat`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/newsboat/newsboat) | [Arch wiki](https://wiki.archlinux.org/title/Newsboat)
 
-### 1. Create config file
+## 1. Create config file
 
 ```sh
 $EDITOR ~/.newsboat/config
 ```
 
-### 2. Insert [config.newsboat](../newsboat/config)
+## 2. Insert [config.newsboat](../newsboat/config)
 
-### 3. Create url file
+## 3. Create url file
 
 ```sh
 $EDITOR ~/.newsboat/urls
@@ -48,7 +47,7 @@ https://url.com/feed "​├─  /tag"
 https://url.com/feed "‌│  ├──  /tag/nested"
 ```
 
-#### 4. How it works
+## 4. How it works
 Feed view:
 - `"~./newsboat/feed"` - Decorative element, optional
 - `"​├─  /tag"` - Essentialy an empty feed, serves as a separator of tagged feeds

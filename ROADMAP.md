@@ -1,6 +1,6 @@
 # Roadmap
 
-### v1.0.0 (2025-12-31)
+## v1.0.0 (2025-12-31)
 - [x] Cybrland v1.0.0
   - [x] Documentation & install guides  
   - [x] Themes
@@ -11,7 +11,7 @@
 - [x] [Cybrcolors v1.0](https://github.com/scherrer-txt/cybrcolors)
 - [x] [Cybrpapers v1.0](https://github.com/scherrer-txt/cybrpapers)
 
-### v1.5.0 (Q1 2026)
+## v1.5.0 (Q1 2026)
 - **Cybrland**
   - [ ] Installer script
   - [ ] Finish Firefox, VSCode and Obsidian themes
@@ -32,7 +32,7 @@
 - Replace waybar/swaync/rofi with quickshell
 - Alternative launcher (Vicinae or Walker)
 
-### v2.0.0 (Q2 2026)
+## v2.0.0 (Q2 2026)
 - **Cybrland**
   - [ ] GTK theme  
 - [ ] ???  
