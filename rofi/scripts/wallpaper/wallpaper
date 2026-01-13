@@ -1,33 +1,24 @@
 #!/usr/bin/env bash
 
-WALLPAPERS_DIR="$HOME/.config/hypr/walls"
-LAST_WALL="$HOME/.cache/last_wallpaper.txt"
-TRIGGER="$HOME/.cache/wallpaper_trigger"
+WALLPAPERS_DIR="$HOME/.config/hypr/theme/walls"
 STYLE="$HOME/.config/rofi/scripts/wallpaper/style.rasi"
 
+# Pick a wallpaper via rofi
 choice=$(
-  ls --escape "$WALLPAPERS_DIR" |
-    while read A; do
-      echo -en "$A\x00icon\x1f$WALLPAPERS_DIR/$A\n"
-    done |
-    rofi -dmenu -i -show-icons -p "Wallpaper" \
-      -theme "$STYLE"
+	ls --escape "$WALLPAPERS_DIR" |
+		while read -r A; do
+		echo -en "$A\x00icon\x1f$WALLPAPERS_DIR/$A\n"
+		done |
+	rofi -dmenu -i -show-icons -p "Wallpaper" -theme "$STYLE"
 )
 
 [ -z "$choice" ] && exit 0
 
 wp="$WALLPAPERS_DIR/$choice"
 
-if [[ -f "$LAST_WALL" && "$(cat "$LAST_WALL")" == "$wp" ]]; then
-    touch "$TRIGGER"
-    exit 0
-fi
+killall hyprpaper
+hyprpaper &
 
-echo "$wp" > "$LAST_WALL"
-
-hyprctl hyprpaper preload "$wp"
-sleep 0.2
-hyprctl hyprpaper wallpaper ",$wp"
-
-touch "$TRIGGER"
-exit 0
+sleep 0.1
+hyprctl hyprpaper wallpaper "DP-2,$wp"
+hyprctl hyprpaper wallpaper "HDMI-A-1,$wp"
