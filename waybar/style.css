@@ -185,17 +185,17 @@ window#waybar.hidden {
 
 #workspaces button {
 	border-radius: 0;
+	border: none;
 	margin: 0;
+	min-width: 30px;
 	font-weight: bolder;
-	min-width: 15px;
 	color: @re0;
 	background: transparent;
 }
 
 #workspaces button label {
 	font-size: 15px;
-	margin: -10px 0px;
-	padding: 0 4px;
+	padding: 0 10px;
 	color: @re0;
 }
 
@@ -226,7 +226,6 @@ window#waybar.hidden {
 #workspaces button.urgent label {
 	color: @ye2;
 }
-
 
 /* === CLOCKS === */
 
