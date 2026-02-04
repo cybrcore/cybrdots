@@ -30,10 +30,10 @@ I maintain full control over creative decisions. Everything else that's far outs
 **Attribution**: I don't explicitly mark AI-generated code because I always modify and format it anyway. The final code is mine.
 
 ### Examples
-**Design**: As a full-time designer, I have full creative control over this project. It's the thing that brings me joy and I would never outsource this to any AI.
-**Problem Solving**: Problem-solving, debugging and troubleshooting is where the learning happens, as it helps me to understand how things work more clearly, so I do that myself.
-**Documentation**: I know how to write, but I don't need to craft every sentence in project documentation from scratch. I use AI to get a springboard/boilerplate, which I then heavily modify to fit my voice and my needs.
-**Scripting**: Since this area is outside my skillset (*for now*), I rely on AI tools to help me.
+**Design**: As a full-time designer, I have full creative control over this project. It's the thing that brings me joy and I would never outsource this to any AI.  
+**Problem Solving**: Problem-solving, debugging and troubleshooting is where the learning happens, as it helps me to understand how things work more clearly, so I do that myself.  
+**Documentation**: I know how to write, but I don't need to craft every sentence in project documentation from scratch. I use AI to get a springboard/boilerplate, which I then heavily modify to fit my voice and my needs.  
+**Scripting**: Since this area is outside my skillset (*for now*), I rely on AI tools to help me.  
 
 ### Tools
 - **Claude AI** - Brainstorming ("*what's the best approach to X*") and code bugfixes
