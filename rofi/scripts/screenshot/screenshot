@@ -2,7 +2,7 @@
 
 theme="$HOME/.config/rofi/scripts/screenshot/style.rasi"
 hyprshot="$HOME/.config/hypr/scripts/hyprshot"
-save_dir="$HOME/Obrázky"
+save_dir="$HOME/Pictures/Screenshots"
 filename="shot-$(date +%Y-%m-%d-%H%M%S).png"
 
 cmd="$hyprshot -o $save_dir -f $filename"

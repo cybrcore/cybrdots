@@ -19,7 +19,7 @@
 
 ## 1. Create theme folder and file
 ```sh
-mkdir -p ~/.config/fastfetch/config.jsonc
+mkdir -p ~/.config/fastfetch/
 $EDITOR ~/.config/fastfetch/config.jsonc
 ```
 ## 2. Insert [CYBRfetch](config.jsonc)

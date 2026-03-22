@@ -1,6 +1,6 @@
 #!/bin/bash
 
-screenshots_dir="$HOME/Obrázky"
+screenshots_dir="$HOME/Pictures/Screenshots"
 theme="$HOME/.config/rofi/scripts/screenshot/selection-style.rasi"
 
 filelist=$(ls -t "$screenshots_dir" 2>/dev/null)
