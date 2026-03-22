@@ -6,7 +6,7 @@
   - [x] Themes
     - [x] hyprland, kitty, fish, waybar, rofi, swaync, starship
     - [x] btop, yazi, broo , fzf, micr , cava, bat
-    - [x] neovim (*beta*)
+    - [x] neovim (*alpha*)
     - [x] firefox (*alpha*)
 - [x] [Cybrcolors v1.0](https://github.com/scherrer-txt/cybrcolors)
 - [x] [Cybrpapers v1.0](https://github.com/scherrer-txt/cybrpapers)
