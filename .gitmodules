@@ -31,3 +31,6 @@
 [submodule "newsboat"]
 	path = newsboat
 	url = https://github.com/cybrcore/cybr-newsboat.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/cybrcore/cybr-nvim.git
