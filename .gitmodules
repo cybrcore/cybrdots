@@ -46,3 +46,6 @@
 [submodule "waybar"]
 	path = waybar
 	url = https://github.com/cybrcore/cybr-waybar.git
+[submodule "yazi"]
+	path = yazi
+	url = https://github.com/cybrcore/cybr-yazi.git
