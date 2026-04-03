@@ -1,3 +1,6 @@
 [submodule "bat"]
 	path = bat
 	url = https://github.com/cybrcore/cybr-bat.git
+[submodule "kitty"]
+	path = kitty
+	url = https://github.com/cybrcore/cybr-kitty.git
