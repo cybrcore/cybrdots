@@ -22,3 +22,6 @@
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/cybrcore/cybr-fzf.git
+[submodule "gtk"]
+	path = gtk
+	url = https://github.com/cybrcore/cybr-gtk.git
