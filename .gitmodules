@@ -40,3 +40,6 @@
 [submodule "starship"]
 	path = starship
 	url = https://github.com/cybrcore/cybr-starship.git
+[submodule "swaync"]
+	path = swaync
+	url = https://github.com/cybrcore/cybr-swaync.git
