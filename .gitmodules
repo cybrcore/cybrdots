@@ -49,3 +49,6 @@
 [submodule "yazi"]
 	path = yazi
 	url = https://github.com/cybrcore/cybr-yazi.git
+[submodule "stylus"]
+	path = stylus
+	url = https://github.com/cybrcore/cybr-stylus.git
