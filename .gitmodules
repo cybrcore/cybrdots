@@ -43,3 +43,6 @@
 [submodule "swaync"]
 	path = swaync
 	url = https://github.com/cybrcore/cybr-swaync.git
+[submodule "waybar"]
+	path = waybar
+	url = https://github.com/cybrcore/cybr-waybar.git
