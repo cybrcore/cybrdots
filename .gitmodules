@@ -16,3 +16,6 @@
 [submodule "fastfetch"]
 	path = fastfetch
 	url = https://github.com/cybrcore/cybr-fastfetch.git
+[submodule "fish"]
+	path = fish
+	url = https://github.com/cybrcore/cybr-fish.git
