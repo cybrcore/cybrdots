@@ -82,5 +82,5 @@
 	path = hypr
 	url = https://github.com/cybrcore/cybr-hyprland.git
 	branch = main
-[submodule "cybrland"]
+[submodule "cybrdots"]
 	url = https://github.com/cybrcore/cybrdots.git

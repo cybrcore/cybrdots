@@ -99,7 +99,7 @@
 - **cybr-vscode** -- Partially themed (*Unreleased*)  
 - **cybrcursors** -- Fully themed, polishing (*Unreleased*, [preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))  
 
-## Related Projects
+## Related `cybrcore` Projects
 - [cybrcolors](https://github.com/cybrcore/cybrcolors) -- Custom color palette (*foundation for all themes*)  
 - [cybrpapers](https://github.com/cybrcore/cybrpapers) -- Hand-crafted wallpaper collection for mobile and desktop  
 - [cybrcore](https://github.com/cybrcore/cybrcore) -- The foundry  
