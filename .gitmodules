@@ -1,63 +1,84 @@
 [submodule "bat"]
 	path = bat
 	url = https://github.com/cybrcore/cybr-bat.git
+	branch = main
 [submodule "kitty"]
 	path = kitty
 	url = https://github.com/cybrcore/cybr-kitty.git
+	branch = main
 [submodule "broot"]
 	path = broot
 	url = https://github.com/cybrcore/cybr-broot.git
+	branch = main
 [submodule "btop"]
 	path = btop
 	url = https://github.com/cybrcore/cybr-btop.git
+	branch = main
 [submodule "cava"]
 	path = cava
 	url = https://github.com/cybrcore/cybr-cava.git
+	branch = main
 [submodule "fastfetch"]
 	path = fastfetch
 	url = https://github.com/cybrcore/cybr-fastfetch.git
+	branch = main
 [submodule "fish"]
 	path = fish
 	url = https://github.com/cybrcore/cybr-fish.git
+	branch = main
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/cybrcore/cybr-fzf.git
+	branch = main
 [submodule "gtk"]
 	path = gtk
 	url = https://github.com/cybrcore/cybr-gtk.git
+	branch = main
 [submodule "micro"]
 	path = micro
 	url = https://github.com/cybrcore/cybr-micro.git
+	branch = main
 [submodule "newsboat"]
 	path = newsboat
 	url = https://github.com/cybrcore/cybr-newsboat.git
+	branch = main
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/cybrcore/cybr-nvim.git
+	branch = main
 [submodule "rofi"]
 	path = rofi
 	url = https://github.com/cybrcore/cybr-rofi.git
+	branch = main
 [submodule "starship"]
 	path = starship
 	url = https://github.com/cybrcore/cybr-starship.git
+	branch = main
 [submodule "swaync"]
 	path = swaync
 	url = https://github.com/cybrcore/cybr-swaync.git
+	branch = main
 [submodule "waybar"]
 	path = waybar
 	url = https://github.com/cybrcore/cybr-waybar.git
+	branch = main
 [submodule "yazi"]
 	path = yazi
 	url = https://github.com/cybrcore/cybr-yazi.git
+	branch = main
 [submodule "stylus"]
 	path = stylus
 	url = https://github.com/cybrcore/cybr-stylus.git
+	branch = main
 [submodule "firefox"]
 	path = firefox
 	url = https://github.com/cybrcore/cybr-firefox.git
+	branch = main
 [submodule "obsidian"]
 	path = obsidian
 	url = https://github.com/cybrcore/cybr-obsidian.git
+	branch = main
 [submodule "hypr"]
 	path = hypr
 	url = https://github.com/cybrcore/cybr-hyprland.git
+	branch = main
