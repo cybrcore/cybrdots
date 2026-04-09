@@ -5,7 +5,7 @@
   </a>
 </p>
 
-# Cybrdots
+# cybrdots
 > [!NOTE]
 > **Lucid dotfiles for hyprland**  
 > Daily driven on Arch + Hyprland as a whole, individual themes should work anywhere  
@@ -100,9 +100,9 @@
 - **cybrcursors** -- Fully themed, polishing (*Unreleased*, [preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))  
 
 ## Related `cybrcore` Projects
-- [cybrcolors](https://github.com/cybrcore/cybrcolors) -- Custom color palette (*foundation for all themes*)  
-- [cybrpapers](https://github.com/cybrcore/cybrpapers) -- Hand-crafted wallpaper collection for mobile and desktop  
-- [cybrcore](https://github.com/cybrcore/cybrcore) -- The foundry  
+- [cybrcolors](https://github.com/cybrcore/cybrcolors) -- Custom color palette  
+- [cybrpapers](https://github.com/cybrcore/cybrpapers) -- Wallpaper collection  
+- [cybrcore](https://github.com/cybrcore/cybrcore) -- The source  
 
 ## Credits & Inspiration
 This project builds on the work of many talented creators:
